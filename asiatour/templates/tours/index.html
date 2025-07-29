@@ -1,0 +1,23 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">        
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asia Tour</title>
+    <link rel="stylesheet" href={% static 'styles/styles.css' %}>
+<body>
+    <body>
+        <script src="{% static 'js/script.js' %}"></script>
+        <ul>
+            {% for tour in tours %}
+                <li>
+                    <h2>{{ tour.origin }} to {{ tour.destination }}</h2>
+                    <p>Price: ${{ tour.price }}</p>
+                    <p>Duration: {{ tour.duration }} days</p>
+                </li>
+            {% endfor %}
+        </ul>
+
+    </body>
+</html>
