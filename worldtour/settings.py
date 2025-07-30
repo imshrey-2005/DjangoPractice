@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'asiatour.apps.AsiatourConfig',  # Ensure 'asiatour' is included in installed apps
     'forms.apps.FormsConfig',  # Ensure 'forms' is included in installed apps
+    'authapp.apps.AuthappConfig'
 ]
 
 MIDDLEWARE = [

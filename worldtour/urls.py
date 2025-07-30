@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('asiatour/',include("asiatour.urls")),
     path('forms/',include("forms.urls")),
+    path('signup/',include("authapp.urls")),
 ]
