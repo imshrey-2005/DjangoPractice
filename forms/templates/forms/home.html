@@ -4,21 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asia Tour</title>
+    <title>Contact Form</title>
     <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
 </head>
 <body>
-    <header>
-        <h1>Welcome to the Asia Tour</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Explore the Beauty of Asia</h2>
-            <p>Join us on an unforgettable journey through the diverse cultures and landscapes of Asia.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Asia Tour. All rights reserved.</p>
-    </footer>
+    <form action="{% url 'contact' %}" method="get">
+        <button type="submit">Enter</button>
+    </form>
 </body>
 </html>
