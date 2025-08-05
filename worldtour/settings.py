@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -40,6 +41,7 @@ INSTALLED_APPS = [
     'asiatour.apps.AsiatourConfig',  # Ensure 'asiatour' is included in installed apps
     'forms.apps.FormsConfig',  # Ensure 'forms' is included in installed apps
     'authapp.apps.AuthappConfig'
+    'crudapp.apps.CrudappConfig'
 ]
 
 MIDDLEWARE = [
@@ -120,7 +122,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 IMAGES_URL = 'images/'
 STATICFILES_DIRS = [
-    BASE_DIR / 'static',
+    os.path.join(BASE_DIR, 'static'),  # Adjust the path as necessary
 ]
 
 # Default primary key field type
